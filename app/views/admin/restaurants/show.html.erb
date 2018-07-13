@@ -6,5 +6,5 @@ Address: <%= @restaurant.address %><br>
 Description:<%= @restaurant.description %><br>
 
 <br>
-
+<%= image_tag @restaurant.image.url, width: '600px' if @restaurant.image? %>
 <%= link_to 'Back to index', admin_restaurants_path %>
